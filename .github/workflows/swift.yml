@@ -11,20 +11,16 @@ on:
 
 jobs:
   build:
-
     runs-on: macos-latest
 
     steps:
     - uses: actions/checkout@v3
+
+    - name: Set Xcode version
+      run: sudo xcode-select -s '/Applications/Xcode_12.5.app/Contents/Developer'  # Change this to the Xcode version that includes Swift 5.8.0
     
-    - name: Set up Swift 5.8.0
-      run: |
-        echo "Installing Swift 5.8.0..."
-        wget https://swift.org/builds/swift-5.8.0-release/xcode/swift-5.8.0-RELEASE/swift-5.8.0-RELEASE-osx.pkg
-        sudo installer -pkg swift-5.8.0-RELEASE-osx.pkg -target /
-        
     - name: Build
       run: swift build -v
-      
+
     - name: Run tests
       run: swift test -v

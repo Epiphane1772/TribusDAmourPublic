@@ -14,11 +14,10 @@ jobs:
     runs-on: macos-latest
 
     steps:
-    - uses: actions/checkout@v2  # Updated from v3 to v2 as v2 is the latest stable version as of my last update
+    - uses: actions/checkout@v2
 
-    # Remove or comment out this section if it's causing errors
-    #- name: Set Xcode version
-    #  run: sudo xcode-select -s '/Applications/Xcode_14.3.1.app/Contents/Developer' 
+    - name: Set Xcode version
+      run: sudo xcode-select -s '/Applications/Xcode_12.5.1.app/Contents/Developer'
 
     - name: Build
       run: swift build -v

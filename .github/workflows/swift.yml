@@ -17,7 +17,7 @@ jobs:
     - uses: actions/checkout@v3
 
     - name: Set Xcode version
-      run: sudo xcode-select -s '/Applications/Xcode_12.5.app/Contents/Developer'  # Change this to the Xcode version that includes Swift 5.8.0
+      run: sudo xcode-select -s '/Applications/Xcode_14.3.1.app/Contents/Developer'  # Set to Xcode 14.3.1
     
     - name: Build
       run: swift build -v

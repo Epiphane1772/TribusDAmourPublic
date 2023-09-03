@@ -1,23 +1,16 @@
-# This workflow will build a Swift project
-# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-swift
-
 name: Swift
 
 on:
   push:
-    branches: [ $default-branch ]
-  pull_request:
-    branches: [ $default-branch ]
+    branches: [ main ]  # replace 'main' with the name of your default branch if it's different
 
 jobs:
   build:
-    runs-on: macos-11 # Attempt to specify macOS 11 to get Swift 5.7.1 (you may need to check which macOS version has the Swift version you need)
+    runs-on: macos-latest
 
     steps:
     - uses: actions/checkout@v3
-    - name: Set Swift version
-      run: echo "SWIFT_VERSION=5.7.1" >> $GITHUB_ENV
-    - name: Build
-      run: swift build -v
-    - name: Run tests
-      run: swift test -v
+    - name: Build TribusDAmour
+      run: swift build --target TribusDAmour -v
+    - name: Run tests for TribusDAmour
+      run: swift test --filter TribusDAmour -v

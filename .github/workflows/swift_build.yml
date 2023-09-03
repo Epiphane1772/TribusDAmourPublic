@@ -25,6 +25,3 @@ jobs:
 
     - name: Build the project
       run: xcodebuild -workspace YourWorkspace.xcworkspace -scheme YourScheme -sdk iphoneos build | xcpretty
-
-    - name: Archive build artifacts
-      run: zip -r build-artifacts.zip build/

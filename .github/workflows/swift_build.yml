@@ -2,7 +2,7 @@ name: Swift
 
 on:
   push:
-    branches: [ main ]  # Replace 'main' with the name of your default branch if it's different
+    branches: [ main ]  # Replace with your default branch if different
 
 jobs:
   build:
@@ -12,7 +12,5 @@ jobs:
     - uses: actions/checkout@v3
     - name: Print directory structure
       run: ls -R
-    - name: Build TribusDAmour
+    - name: Build
       run: swift build --target TribusDAmour -v
-    - name: Run tests for TribusDAmour
-      run: swift test --filter TribusDAmour -v

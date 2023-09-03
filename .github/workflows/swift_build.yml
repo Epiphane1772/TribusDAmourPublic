@@ -15,7 +15,7 @@ jobs:
     - name: Setup Xcode
       uses: maxim-lobanov/setup-xcode@v1
       with:
-        xcode-version: '12.4'  # Update to the version you need
+        xcode-version: '14.2.0'  # Update to the version that is available
 
     - name: Install CocoaPods
       run: sudo gem install cocoapods

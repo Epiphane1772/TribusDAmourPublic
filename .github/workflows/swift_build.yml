@@ -25,3 +25,6 @@ jobs:
 
     - name: Build the project
       run: xcodebuild -workspace YourWorkspace.xcworkspace -scheme YourScheme -sdk iphoneos build | xcpretty
+
+    - name: Run tests
+      run: xcodebuild test -workspace YourWorkspace.xcworkspace -scheme YourScheme -destination 'platform=iOS Simulator,name=iPhone 12,OS=latest' | xcpretty

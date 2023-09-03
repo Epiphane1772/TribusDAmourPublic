@@ -1,11 +1,29 @@
-on: [push, pull_request]
+name: Swift iOS Build
+
+on:
+  push:
+    branches: [ main ]
 
 jobs:
   build:
-    runs-on: macos-latest
+    runs-on: macOS-latest
+
     steps:
-      - uses: actions/checkout@v2
-      - name: List directory
-        run: ls -R
-      - name: Build the project
-        run: swift build --target TribusDAmour -v
+    - name: Checkout code
+      uses: actions/checkout@v2
+      
+    - name: Set Xcode version
+      run: sudo xcode-select -s '/Applications/Xcode_12.5.1.app/Contents/Developer'
+
+    - name: Install dependencies
+      run: pod install --repo-update
+
+    - name: Build the project
+      run: xcodebuild -workspace YourWorkspace.xcworkspace -scheme YourScheme -sdk iphoneos -configuration Debug build | xcpretty
+      
+    - name: Code Signing
+      run: |
+        security create-keychain -p "" build.keychain
+        security import ./certs/Certificates.p12 -t agg -k ~/Library/Keychains/build.keychain -P "" -A
+
+    # Add more steps as needed

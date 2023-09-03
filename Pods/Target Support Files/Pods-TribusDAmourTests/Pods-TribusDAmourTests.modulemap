@@ -1,0 +1,6 @@
+framework module Pods_TribusDAmourTests {
+  umbrella header "Pods-TribusDAmourTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,5 +1,30 @@
-steps:
-- name: Setup Xcode
-  uses: actions/setup-xcode@v2
-  with:
-    xcode-version: '12.4'  # Specify the version you need
+name: Swift CI
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: macOS-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Setup Xcode
+      uses: actions/setup-xcode@v2
+      with:
+        xcode-version: '12.4'  # Update to the version you need
+
+    - name: Install CocoaPods
+      run: sudo gem install cocoapods
+
+    - name: Install project dependencies
+      run: pod install --repo-update
+
+    - name: Build the project
+      run: xcodebuild -workspace YourWorkspace.xcworkspace -scheme YourScheme -sdk iphoneos build | xcpretty
+
+    - name: Archive build artifacts
+      run: zip -r build-artifacts.zip build/

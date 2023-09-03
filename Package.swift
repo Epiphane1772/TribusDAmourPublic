@@ -1,13 +1,21 @@
-// swift-tools-version:5.7.1
+// swift-tools-version:5.8.0
+
 import PackageDescription
 
 let package = Package(
-    name: "YourPackageName",
+    name: "tribusdamourpublic",
+    products: [
+        .library(
+            name: "tribusdamourpublic",
+            targets: ["TribusDAmour"]),
+    ],
     dependencies: [
-        .package(url: "https://github.com/onevcat/Kingfisher.git", from: "7.9.1"),
+        // Add your package dependencies here, if any.
     ],
     targets: [
-        .target(name: "YourSourceTargetName", dependencies: ["main.swift",]),
-        .testTarget(name: "YourTestTargetName", dependencies: []),
+        .target(
+            name: "TribusDAmour",
+            dependencies: [],
+            path: "Sources/TribusDAmour")  // Replace this with your custom path if needed
     ]
 )

@@ -13,7 +13,7 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Setup Xcode
-      uses: actions/setup-xcode@v2
+      uses: maxim-lobanov/setup-xcode@v1
       with:
         xcode-version: '12.4'  # Update to the version you need
 

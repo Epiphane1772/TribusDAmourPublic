@@ -1,11 +1,30 @@
-on: [push, pull_request]
+name: Swift CI
+
+on:
+  push:
+    branches: [ main ]
 
 jobs:
   build:
-    runs-on: macos-latest
+    runs-on: macOS-latest
+
     steps:
-      - uses: actions/checkout@v2
-      - name: List directory
-        run: ls -R
-      - name: Build the project
-        run: swift build --target TribusDAmour -v
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Setup Xcode
+      uses: maxim-lobanov/setup-xcode@v1
+      with:
+        xcode-version: '14.2.0'  # Update to the version that is available
+
+    - name: Install CocoaPods
+      run: sudo gem install cocoapods
+
+    - name: Install project dependencies
+      run: pod install --repo-update
+
+    - name: Build the project
+      run: xcodebuild -workspace YourWorkspace.xcworkspace -scheme YourScheme -sdk iphoneos build | xcpretty
+
+    - name: Run tests
+      run: xcodebuild test -workspace YourWorkspace.xcworkspace -scheme YourScheme -destination 'platform=iOS Simulator,name=iPhone 12,OS=latest' | xcpretty

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		10F47F68DFA827A993E15BA1 /* Pods_TribusDAmourTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 460A8AA0CA206B2491A70630 /* Pods_TribusDAmourTests.framework */; };
 		3707818D2A8F52BE0089D46B /* TBDAServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3707818C2A8F52BE0089D46B /* TBDAServiceProtocol.swift */; };
 		3707818F2A8F54820089D46B /* MockPodcastSearchResult.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3707818E2A8F54820089D46B /* MockPodcastSearchResult.txt */; };
 		370781912A8F71D50089D46B /* MockTBDAService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370781902A8F71D50089D46B /* MockTBDAService.swift */; };
@@ -58,6 +59,8 @@
 		37FDFCFE2A8CA398003F8622 /* PodcastCoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FDFCFD2A8CA398003F8622 /* PodcastCoreDataManager.swift */; };
 		37FEB33B2A934F2600661A46 /* PlayerStatePersistenceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FEB33A2A934F2600661A46 /* PlayerStatePersistenceUITests.swift */; };
 		37FEB33D2A93525900661A46 /* PodcastPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FEB33C2A93525900661A46 /* PodcastPlayerView.swift */; };
+		5DECD5A55AD1770459D2B17E /* Pods_TribusDAmour.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE249130E427C237807C8F14 /* Pods_TribusDAmour.framework */; };
+		B85B48E5E6E392EF0F42999A /* Pods_TribusDAmour_TribusDAmourUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C14D4FCE178510DA32A9F750 /* Pods_TribusDAmour_TribusDAmourUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +81,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0CF60DFF928447CAF3D3C7F7 /* Pods-TribusDAmour.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TribusDAmour.release.xcconfig"; path = "Target Support Files/Pods-TribusDAmour/Pods-TribusDAmour.release.xcconfig"; sourceTree = "<group>"; };
 		3707818C2A8F52BE0089D46B /* TBDAServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TBDAServiceProtocol.swift; sourceTree = "<group>"; };
 		3707818E2A8F54820089D46B /* MockPodcastSearchResult.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = MockPodcastSearchResult.txt; sourceTree = "<group>"; };
 		370781902A8F71D50089D46B /* MockTBDAService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTBDAService.swift; sourceTree = "<group>"; };
@@ -121,6 +125,7 @@
 		37AF81E22A7A1D1F00340547 /* TBDAService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TBDAService.swift; sourceTree = "<group>"; };
 		37AF81E42A7A1D3500340547 /* TBDARequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TBDARequest.swift; sourceTree = "<group>"; };
 		37B748592A7B7E7C0018E59B /* PodcastListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastListView.swift; sourceTree = "<group>"; };
+		37C3445C2104D394BA5308F4 /* Pods-TribusDAmour.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TribusDAmour.debug.xcconfig"; path = "Target Support Files/Pods-TribusDAmour/Pods-TribusDAmour.debug.xcconfig"; sourceTree = "<group>"; };
 		37E446E02A7C1657000A0D9F /* PodcastSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastSearchView.swift; sourceTree = "<group>"; };
 		37E446E22A7C1669000A0D9F /* PodcastFavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastFavoriteView.swift; sourceTree = "<group>"; };
 		37E446E92A7CCA58000A0D9F /* PodcastDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastDetailView.swift; sourceTree = "<group>"; };
@@ -132,6 +137,13 @@
 		37FDFCFD2A8CA398003F8622 /* PodcastCoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastCoreDataManager.swift; sourceTree = "<group>"; };
 		37FEB33A2A934F2600661A46 /* PlayerStatePersistenceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerStatePersistenceUITests.swift; sourceTree = "<group>"; };
 		37FEB33C2A93525900661A46 /* PodcastPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastPlayerView.swift; sourceTree = "<group>"; };
+		460A8AA0CA206B2491A70630 /* Pods_TribusDAmourTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TribusDAmourTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EFBB7EBF50B5855E0C36B9A /* Pods-TribusDAmour-TribusDAmourUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TribusDAmour-TribusDAmourUITests.release.xcconfig"; path = "Target Support Files/Pods-TribusDAmour-TribusDAmourUITests/Pods-TribusDAmour-TribusDAmourUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6D64A513582F58A97A2A70D7 /* Pods-TribusDAmour-TribusDAmourUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TribusDAmour-TribusDAmourUITests.debug.xcconfig"; path = "Target Support Files/Pods-TribusDAmour-TribusDAmourUITests/Pods-TribusDAmour-TribusDAmourUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9D93C1DCE6958FC5AA3EEDB9 /* Pods-TribusDAmourTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TribusDAmourTests.release.xcconfig"; path = "Target Support Files/Pods-TribusDAmourTests/Pods-TribusDAmourTests.release.xcconfig"; sourceTree = "<group>"; };
+		BC65EB86307F0BDAEB379789 /* Pods-TribusDAmourTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TribusDAmourTests.debug.xcconfig"; path = "Target Support Files/Pods-TribusDAmourTests/Pods-TribusDAmourTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C14D4FCE178510DA32A9F750 /* Pods_TribusDAmour_TribusDAmourUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TribusDAmour_TribusDAmourUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE249130E427C237807C8F14 /* Pods_TribusDAmour.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TribusDAmour.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +153,7 @@
 			files = (
 				374B28DF2A88CA5D00E08772 /* Speech.framework in Frameworks */,
 				37E446E82A7CC4A2000A0D9F /* Kingfisher in Frameworks */,
+				5DECD5A55AD1770459D2B17E /* Pods_TribusDAmour.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,6 +161,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10F47F68DFA827A993E15BA1 /* Pods_TribusDAmourTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,6 +169,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B85B48E5E6E392EF0F42999A /* Pods_TribusDAmour_TribusDAmourUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,6 +186,7 @@
 				3711A7BD2A78DEB4007F8B9D /* TribusDAmourUITests */,
 				3711A79C2A78DEB3007F8B9D /* Products */,
 				374B28DD2A88CA5D00E08772 /* Frameworks */,
+				D7932A5F9734C4519E05C1A8 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -223,6 +239,9 @@
 			isa = PBXGroup;
 			children = (
 				374B28DE2A88CA5D00E08772 /* Speech.framework */,
+				EE249130E427C237807C8F14 /* Pods_TribusDAmour.framework */,
+				C14D4FCE178510DA32A9F750 /* Pods_TribusDAmour_TribusDAmourUITests.framework */,
+				460A8AA0CA206B2491A70630 /* Pods_TribusDAmourTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -413,6 +432,20 @@
 			path = CoreData;
 			sourceTree = "<group>";
 		};
+		D7932A5F9734C4519E05C1A8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				37C3445C2104D394BA5308F4 /* Pods-TribusDAmour.debug.xcconfig */,
+				0CF60DFF928447CAF3D3C7F7 /* Pods-TribusDAmour.release.xcconfig */,
+				6D64A513582F58A97A2A70D7 /* Pods-TribusDAmour-TribusDAmourUITests.debug.xcconfig */,
+				5EFBB7EBF50B5855E0C36B9A /* Pods-TribusDAmour-TribusDAmourUITests.release.xcconfig */,
+				BC65EB86307F0BDAEB379789 /* Pods-TribusDAmourTests.debug.xcconfig */,
+				9D93C1DCE6958FC5AA3EEDB9 /* Pods-TribusDAmourTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -420,6 +453,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3711A7C42A78DEB4007F8B9D /* Build configuration list for PBXNativeTarget "TribusDAmour" */;
 			buildPhases = (
+				398700ED82F1E50D1791C990 /* [CP] Check Pods Manifest.lock */,
 				3711A7972A78DEB3007F8B9D /* Sources */,
 				3711A7982A78DEB3007F8B9D /* Frameworks */,
 				3711A7992A78DEB3007F8B9D /* Resources */,
@@ -440,6 +474,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3711A7C72A78DEB4007F8B9D /* Build configuration list for PBXNativeTarget "TribusDAmourTests" */;
 			buildPhases = (
+				DC58053D83E0D8778CC1FA10 /* [CP] Check Pods Manifest.lock */,
 				3711A7AC2A78DEB4007F8B9D /* Sources */,
 				3711A7AD2A78DEB4007F8B9D /* Frameworks */,
 				3711A7AE2A78DEB4007F8B9D /* Resources */,
@@ -458,6 +493,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3711A7CA2A78DEB4007F8B9D /* Build configuration list for PBXNativeTarget "TribusDAmourUITests" */;
 			buildPhases = (
+				66BB859137562B06F069C794 /* [CP] Check Pods Manifest.lock */,
 				3711A7B62A78DEB4007F8B9D /* Sources */,
 				3711A7B72A78DEB4007F8B9D /* Frameworks */,
 				3711A7B82A78DEB4007F8B9D /* Resources */,
@@ -506,7 +542,7 @@
 			);
 			mainGroup = 3711A7922A78DEB3007F8B9D;
 			packageReferences = (
-				37E446E62A7CC4A2000A0D9F /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				37E446E62A7CC4A2000A0D9F /* XCRemoteSwiftPackageReference "Kingfisher.git" */,
 			);
 			productRefGroup = 3711A79C2A78DEB3007F8B9D /* Products */;
 			projectDirPath = "";
@@ -545,6 +581,75 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		398700ED82F1E50D1791C990 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TribusDAmour-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		66BB859137562B06F069C794 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TribusDAmour-TribusDAmourUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC58053D83E0D8778CC1FA10 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TribusDAmourTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3711A7972A78DEB3007F8B9D /* Sources */ = {
@@ -748,6 +853,7 @@
 		};
 		3711A7C52A78DEB4007F8B9D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37C3445C2104D394BA5308F4 /* Pods-TribusDAmour.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -781,6 +887,7 @@
 		};
 		3711A7C62A78DEB4007F8B9D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CF60DFF928447CAF3D3C7F7 /* Pods-TribusDAmour.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -814,6 +921,7 @@
 		};
 		3711A7C82A78DEB4007F8B9D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC65EB86307F0BDAEB379789 /* Pods-TribusDAmourTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -834,6 +942,7 @@
 		};
 		3711A7C92A78DEB4007F8B9D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D93C1DCE6958FC5AA3EEDB9 /* Pods-TribusDAmourTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -854,6 +963,7 @@
 		};
 		3711A7CB2A78DEB4007F8B9D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D64A513582F58A97A2A70D7 /* Pods-TribusDAmour-TribusDAmourUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -872,6 +982,7 @@
 		};
 		3711A7CC2A78DEB4007F8B9D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EFBB7EBF50B5855E0C36B9A /* Pods-TribusDAmour-TribusDAmourUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -930,7 +1041,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		37E446E62A7CC4A2000A0D9F /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+		37E446E62A7CC4A2000A0D9F /* XCRemoteSwiftPackageReference "Kingfisher.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
 			requirement = {
@@ -943,7 +1054,7 @@
 /* Begin XCSwiftPackageProductDependency section */
 		37E446E72A7CC4A2000A0D9F /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 37E446E62A7CC4A2000A0D9F /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			package = 37E446E62A7CC4A2000A0D9F /* XCRemoteSwiftPackageReference "Kingfisher.git" */;
 			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */

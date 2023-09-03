@@ -11,19 +11,12 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
-      
+
     - name: Set Xcode version
-      run: sudo xcode-select -s '/Applications/Xcode_12.5.1.app/Contents/Developer'
+      run: sudo xcode-select -s '/Applications/Xcode_12.4.app/Contents/Developer'  # Change this to an available version on GitHub Actions
 
     - name: Install dependencies
       run: pod install --repo-update
 
     - name: Build the project
       run: xcodebuild -workspace YourWorkspace.xcworkspace -scheme YourScheme -sdk iphoneos -configuration Debug build | xcpretty
-      
-    - name: Code Signing
-      run: |
-        security create-keychain -p "" build.keychain
-        security import ./certs/Certificates.p12 -t agg -k ~/Library/Keychains/build.keychain -P "" -A
-
-    # Add more steps as needed

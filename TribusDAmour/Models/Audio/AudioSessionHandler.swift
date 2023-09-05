@@ -2,8 +2,8 @@
 //  AudioSessionHandler.swift
 //  TribusDAmour
 //
-//  Created by Lab Comments: Stephane Lefebvre on 2023-08-13.
-//  Copyright © Lab Comments: 2023 Stephane Lefebvre. All rights reserved.
+//  Created by Stephane Lefebvre on 2023-08-03.
+//  Copyright © 2023 Stephane Lefebvre. All rights reserved.
 //
 
 import AVFoundation

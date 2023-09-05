@@ -2,7 +2,7 @@
 //  AudioSessionHandlerTests.swift
 //  TribusDAmourTests
 //
-//  Created by ChatGPT on 2023-08-18.
+//  Created by Stephane Lefebvre on 2023-08-18.
 //  Copyright © 2023 Stephane Lefebvre. All rights reserved.
 //
 

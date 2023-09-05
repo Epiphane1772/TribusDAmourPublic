@@ -2,7 +2,8 @@
 //  GenericAPITests.swift
 //  TribusDAmour
 //
-//  Created by Stephane Lefebvre on 5/27/23.
+//  Created by Stephane Lefebvre on 2023-08-17.
+//  Copyright © 2023 Stephane Lefebvre. All rights reserved.
 //
 
 import XCTest

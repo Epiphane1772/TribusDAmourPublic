@@ -1,7 +1,10 @@
+//
 // CoreDataStack.swift
 // Reciplease
 //
-// Created by Stephane Lefebvre on 7/23/23.
+//  Created by Stephane Lefebvre on 2023-08-03.
+//  Copyright © 2023 Stephane Lefebvre. All rights reserved.
+//
 
 import Foundation
 import CoreData

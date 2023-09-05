@@ -1,9 +1,9 @@
 //
 //  AVPlayerViewControllerWrapper.swift
-//  YourApp
+//  TribusDAmour
 //
-//  Created by Your Name on Date.
-//  Copyright © 2023 Your Company. All rights reserved.
+//  Created by Stephane Lefebvre on 2023/08/11.
+//  Copyright © 2023 SEL Consulting. All rights reserved.
 //
 
 import SwiftUI

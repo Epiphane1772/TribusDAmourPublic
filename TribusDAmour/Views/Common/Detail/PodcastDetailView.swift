@@ -2,8 +2,8 @@
 //  PodcastDetailView.swift
 //  TribusDAmour
 //
-//  Created by Lab Comments: Stephane Lefebvre on 8/27/23.
-//  Copyright © Lab Comments: 2023 SEL Consulting. All rights reserved.
+//  Created by Stephane Lefebvre on 8/27/23.
+//  Copyright © 2023 SEL Consulting. All rights reserved.
 //
 
 import SwiftUI

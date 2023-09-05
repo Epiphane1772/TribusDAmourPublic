@@ -17,7 +17,6 @@
 		3711A7A32A78DEB4007F8B9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3711A7A22A78DEB4007F8B9D /* Assets.xcassets */; };
 		3711A7A82A78DEB4007F8B9D /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3711A7A72A78DEB4007F8B9D /* Persistence.swift */; };
 		3711A7AB2A78DEB4007F8B9D /* TribusDAmour.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3711A7A92A78DEB4007F8B9D /* TribusDAmour.xcdatamodeld */; };
-		3711A7B52A78DEB4007F8B9D /* TribusDAmourTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3711A7B42A78DEB4007F8B9D /* TribusDAmourTests.swift */; };
 		3711A7BF2A78DEB4007F8B9D /* TribusDAmourUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3711A7BE2A78DEB4007F8B9D /* TribusDAmourUITests.swift */; };
 		3711A7C12A78DEB4007F8B9D /* TribusDAmourUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3711A7C02A78DEB4007F8B9D /* TribusDAmourUITestsLaunchTests.swift */; };
 		37322BF02A790DBB0007F759 /* PodcastData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37322BEF2A790DBB0007F759 /* PodcastData.swift */; };
@@ -91,7 +90,6 @@
 		3711A7A72A78DEB4007F8B9D /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		3711A7AA2A78DEB4007F8B9D /* TribusDAmour.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TribusDAmour.xcdatamodel; sourceTree = "<group>"; };
 		3711A7B02A78DEB4007F8B9D /* TribusDAmourTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TribusDAmourTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3711A7B42A78DEB4007F8B9D /* TribusDAmourTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TribusDAmourTests.swift; sourceTree = "<group>"; };
 		3711A7BA2A78DEB4007F8B9D /* TribusDAmourUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TribusDAmourUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3711A7BE2A78DEB4007F8B9D /* TribusDAmourUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TribusDAmourUITests.swift; sourceTree = "<group>"; };
 		3711A7C02A78DEB4007F8B9D /* TribusDAmourUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TribusDAmourUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -200,7 +198,6 @@
 		3711A7B32A78DEB4007F8B9D /* TribusDAmourTests */ = {
 			isa = PBXGroup;
 			children = (
-				3711A7B42A78DEB4007F8B9D /* TribusDAmourTests.swift */,
 				376BFAD72A8F359A00BDDAB8 /* Nerwork */,
 				376BFAD82A8F35B200BDDAB8 /* Service */,
 				376BFAD92A8F35FF00BDDAB8 /* Audio */,
@@ -606,7 +603,6 @@
 				370781932A8F71F30089D46B /* PodcastSearchViewModelTests.swift in Sources */,
 				378614C22A8E493800B444FD /* DataMapperTests.swift in Sources */,
 				376BFADB2A8F36A000BDDAB8 /* PodcastCoreDataManagerTests.swift in Sources */,
-				3711A7B52A78DEB4007F8B9D /* TribusDAmourTests.swift in Sources */,
 				370781912A8F71D50089D46B /* MockTBDAService.swift in Sources */,
 				378614C42A8E4C1D00B444FD /* GenericAPITests.swift in Sources */,
 			);

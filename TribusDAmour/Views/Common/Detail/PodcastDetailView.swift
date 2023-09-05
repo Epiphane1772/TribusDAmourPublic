@@ -23,7 +23,9 @@ enum ActiveSheet: Identifiable {
 
 struct ShareSheet: UIViewControllerRepresentable {
     var items: [Any]
-    func makeUIViewController(context: Context) -> UIActivityViewController { return UIActivityViewController(activityItems: items, applicationActivities: nil) }
+    func makeUIViewController(context: Context) -> UIActivityViewController {
+        return UIActivityViewController(activityItems: items, applicationActivities: nil)
+    }
     func updateUIViewController(_ uiViewController: UIActivityViewController, context: Context) {}
 }
 
@@ -59,7 +61,7 @@ struct PodcastDetailView: View {
                     if showPlayButton {
                         Button(action: {
                             self.activeSheet = .player
-                            showPlayButton.toggle()
+                            showPlayButton = false
                         }) {
                             Image(systemName: "play.circle.fill")
                                 .resizable()
@@ -68,8 +70,11 @@ struct PodcastDetailView: View {
                     } else {
                         Button(action: {
                             if let player = PlayerManager.shared.player {
-                                if player.timeControlStatus == .playing { player.pause() }
-                                else { player.play() }
+                                if player.timeControlStatus == .playing {
+                                    player.pause()
+                                } else {
+                                    player.play()
+                                }
                             }
                             showPlayButton.toggle()
                         }) {
@@ -114,7 +119,9 @@ struct PodcastDetailView: View {
                 announceDescription()
             }
         }
-        .sheet(item: $activeSheet) { item in
+        .sheet(item: $activeSheet, onDismiss: {
+            showPlayButton = true
+        }) { item in
             switch item {
             case .player:
                 VStack {

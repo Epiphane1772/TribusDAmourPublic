@@ -57,36 +57,37 @@ struct PodcastDetailView: View {
                     .resizable()
                     .scaledToFit()
                     .cornerRadius(10)
-                HStack {
-                    if showPlayButton {
-                        Button(action: {
-                            self.activeSheet = .player
-                            showPlayButton = false
-                        }) {
-                            Image(systemName: "play.circle.fill")
-                                .resizable()
-                                .frame(width: 60, height: 60)
-                        }
-                    } else {
-                        Button(action: {
-                            if let player = PlayerManager.shared.player {
-                                if player.timeControlStatus == .playing {
-                                    player.pause()
-                                } else {
-                                    player.play()
-                                }
+                
+                if showPlayButton {
+                    Button(action: {
+                        self.activeSheet = .player
+                        showPlayButton = false
+                    }) {
+                        Image(systemName: "play.circle.fill")
+                            .resizable()
+                            .frame(width: 60, height: 60)
+                    }
+                } else {
+                    Button(action: {
+                        if let player = PlayerManager.shared.player {
+                            if player.timeControlStatus == .playing {
+                                player.pause()
+                            } else {
+                                player.play()
                             }
-                            showPlayButton.toggle()
-                        }) {
-                            Image(systemName: "pause.circle.fill")
-                                .resizable()
-                                .frame(width: 60, height: 60)
                         }
+                        showPlayButton.toggle()
+                    }) {
+                        Image(systemName: "pause.circle.fill")
+                            .resizable()
+                            .frame(width: 60, height: 60)
                     }
                 }
+                
                 Text(podcast.author)
                     .font(.title2)
                     .foregroundColor(.secondary)
+                
                 if !podcast.description.isEmpty {
                     Text(podcast.description)
                         .font(.body)
@@ -118,9 +119,16 @@ struct PodcastDetailView: View {
             if voiceHints {
                 announceDescription()
             }
+            showPlayButton = true // Make sure play button is displayed on appear
         }
         .sheet(item: $activeSheet, onDismiss: {
-            showPlayButton = true
+            if let player = PlayerManager.shared.player {
+                if player.timeControlStatus == .playing {
+                    showPlayButton = false
+                } else {
+                    showPlayButton = true
+                }
+            }
         }) { item in
             switch item {
             case .player:
@@ -149,7 +157,7 @@ struct PodcastDetailView: View {
     func checkIfFavorite() {
         isFavorite = podcastManager.exists(podcastData: podcast)
     }
-
+    
     func toggleFavorites() {
         if isFavorite {
             podcastManager.remove(podcastData: podcast)
@@ -164,7 +172,7 @@ struct PodcastDetailView: View {
             print("Error saving managed object context: \(error)")
         }
     }
-
+    
     func announceDescription() {
         let utteranceText = !podcast.description.isEmpty ? podcast.description : "Description non disponible"
         let utterance = AVSpeechUtterance(string: utteranceText)

@@ -12,7 +12,7 @@ import SwiftUI
 struct PodcastSearchView: View {
     @State private var searchText = ""
     @ObservedObject private var viewModel = PodcastSearchViewModel()
-    @ObservedObject private var playerManager = PodcastPlayerManager(url: URL(string: "your_podcast_url_here")!) // Update the URL
+//    @ObservedObject private var playerManager = PodcastPlayerManager(url: URL(string: "your_podcast_url_here")!) // Update the URL
 
     var body: some View {
         NavigationView {
@@ -39,9 +39,6 @@ struct PodcastSearchView: View {
                 } else {
                     PodcastListView(podcasts: $viewModel.podcasts)
                 }
-
-                // Display the podcast player
-                PodcastPlayerView(playerManager: playerManager) // Pass the playerManager here
             }
             .navigationTitle("Search Podcasts")
             .accessibility(label: Text("Podcast search screen"))

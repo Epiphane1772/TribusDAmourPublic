@@ -58,7 +58,6 @@
 		37F4A7F82A8E6661000CA09A /* AudioSessionHandlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F4A7F72A8E6661000CA09A /* AudioSessionHandlerTests.swift */; };
 		37FDFCFE2A8CA398003F8622 /* PodcastCoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FDFCFD2A8CA398003F8622 /* PodcastCoreDataManager.swift */; };
 		37FEB33B2A934F2600661A46 /* PlayerStatePersistenceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FEB33A2A934F2600661A46 /* PlayerStatePersistenceUITests.swift */; };
-		37FEB33D2A93525900661A46 /* PodcastPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FEB33C2A93525900661A46 /* PodcastPlayerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -133,7 +132,6 @@
 		37F4A7F72A8E6661000CA09A /* AudioSessionHandlerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioSessionHandlerTests.swift; sourceTree = "<group>"; };
 		37FDFCFD2A8CA398003F8622 /* PodcastCoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastCoreDataManager.swift; sourceTree = "<group>"; };
 		37FEB33A2A934F2600661A46 /* PlayerStatePersistenceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerStatePersistenceUITests.swift; sourceTree = "<group>"; };
-		37FEB33C2A93525900661A46 /* PodcastPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastPlayerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -248,6 +246,7 @@
 			children = (
 				376D47302A89D50B00DA6979 /* Entry */,
 				376D472E2A89D3CB00DA6979 /* Common */,
+				3771E9952AA6C3A000E53957 /* Player */,
 				376D472F2A89D3D900DA6979 /* Favorites */,
 				376D47352A89E95400DA6979 /* Settings */,
 			);
@@ -345,6 +344,14 @@
 			path = Detail;
 			sourceTree = "<group>";
 		};
+		3771E9952AA6C3A000E53957 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				375A73C42A8D22DA0017231A /* AVPlayerViewControllerWrapper.swift */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
 		378614B12A8E1ECE00B444FD /* Search */ = {
 			isa = PBXGroup;
 			children = (
@@ -365,10 +372,8 @@
 		37AA6A612A835C7700DCC64C /* Audio */ = {
 			isa = PBXGroup;
 			children = (
-				37FEB33C2A93525900661A46 /* PodcastPlayerView.swift */,
 				37AA6A622A835CA200DCC64C /* AudioPlayerManager.swift */,
 				374B28E12A891A8800E08772 /* AudioSessionHandler.swift */,
-				375A73C42A8D22DA0017231A /* AVPlayerViewControllerWrapper.swift */,
 				37721E252A8DD6E200EE7E8D /* PlayerStatePersistence.swift */,
 				3765D4052A934C2900CD3C88 /* PlayerStatePersistable.swift */,
 			);
@@ -575,7 +580,6 @@
 				37AF81DE2A7A17EB00340547 /* GenericAPIProtocol.swift in Sources */,
 				37AF81E32A7A1D1F00340547 /* TBDAService.swift in Sources */,
 				3711A7A12A78DEB3007F8B9D /* ContentView.swift in Sources */,
-				37FEB33D2A93525900661A46 /* PodcastPlayerView.swift in Sources */,
 				376634222A81632900DC2BD9 /* SearchBarView.swift in Sources */,
 				3711A7AB2A78DEB4007F8B9D /* TribusDAmour.xcdatamodeld in Sources */,
 				37721E262A8DD6E200EE7E8D /* PlayerStatePersistence.swift in Sources */,

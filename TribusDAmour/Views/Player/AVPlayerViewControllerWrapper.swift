@@ -1,3 +1,11 @@
+//
+//  AVPlayerViewControllerWrapper.swift
+//  YourApp
+//
+//  Created by Your Name on Date.
+//  Copyright © 2023 Your Company. All rights reserved.
+//
+
 import SwiftUI
 import AVKit
 
